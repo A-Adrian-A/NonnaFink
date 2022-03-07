@@ -12,7 +12,19 @@
        url('/font/Josefine_Sans/josefin-sans-v23-latin-regular.svg#JosefinSans') format('svg'); /* Legacy iOS */
 }
 
-
+/* stint-ultra-expanded-regular - latin */
+@font-face {
+  font-family: 'Stint Ultra Expanded';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.svg#StintUltraExpanded') format('svg'); /* Legacy iOS */
+}
 
 body,html {
   margin: 0;
@@ -44,6 +56,9 @@ p{
   color: #A3C4D9;
 }
 
-.logo p{
-  transform: rotate(90deg);
+.logo{
+  padding-left: 1rem;
+  font-size: 2rem;
+  color: #A3C4D9;
+  font-family: 'Stint Ultra Expanded', Times, serif;
 }
