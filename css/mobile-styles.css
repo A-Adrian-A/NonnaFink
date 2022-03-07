@@ -43,3 +43,7 @@ p{
   font-size: 2rem;
   color: #A3C4D9;
 }
+
+.logo p{
+  transform: rotate(90deg);
+}
