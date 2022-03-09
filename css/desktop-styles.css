@@ -33,13 +33,13 @@ body,html {
 }
 
 body{
-  height: 100vh;
   background-color: #011C26;
 }
 
-body{
+.content{
+  height: 100vh;
   display: grid; 
-  grid-template-columns:  4rem 1fr 1fr;
+  grid-template-columns:  8rem 1fr 1fr;
 }
 
 img {
@@ -63,14 +63,91 @@ img {
   writing-mode: vertical-lr;
   text-orientation: mixed;
   text-align: center;
-  padding-left: 1rem;
   font-size: 4rem;
-  color: #A3C4D9;
+  color: #5888A6;
   font-family: 'Stint Ultra Expanded', Times, serif;
 }
 
 p {
   font-size: 2rem;
   color: #A3C4D9;
+  text-align: justify;
   font-family: 'Josefin Sans', Times, serif;
 }
+
+
+nav{
+  border-bottom: 1px solid #A3C4D9;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  
+}
+a {
+  text-decoration: none;
+}
+
+nav a {
+  font-family: 'Josefin Sans', Times, serif;
+  color: #A3C4D9;
+  font-size: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+nav a:hover ,nav .icon:hover  {
+  color: #EBA13B;
+
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+#email {
+  background-color: #A3C4D9;
+  -webkit-mask: url(/landing/icon/email.svg) no-repeat center;
+  mask: url(/landing/icon/email.svg) no-repeat center;
+}
+
+#instagram {
+  background-color: #A3C4D9;
+  -webkit-mask: url(/landing/icon/instagram.svg) no-repeat center;
+  mask: url(/landing/icon/instagram.svg) no-repeat center;
+}
+
+#linkedin {
+  background-color: #A3C4D9;
+  -webkit-mask: url(/landing/icon/linkedin.svg) no-repeat center;
+  mask: url(/landing/icon/linkedin.svg) no-repeat center;
+}
+
+#email:hover {
+  background-color: #EBA13B;
+  -webkit-mask: url(/landing/icon/email.svg) no-repeat center;
+  mask: url(/landing/icon/email.svg) no-repeat center;
+}
+
+#instagram:hover {
+  background-color: #EBA13B;
+  -webkit-mask: url(/landing/icon/instagram.svg) no-repeat center;
+  mask: url(/landing/icon/instagram.svg) no-repeat center;
+}
+
+#linkedin:hover {
+  background-color: #EBA13B;
+  -webkit-mask: url(/landing/icon/linkedin.svg) no-repeat center;
+  mask: url(/landing/icon/linkedin.svg) no-repeat center;
+}
+
+

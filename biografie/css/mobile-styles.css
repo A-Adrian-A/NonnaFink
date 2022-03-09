@@ -1,0 +1,64 @@
+/* josefin-sans-regular - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/font/Josefine_Sans/josefin-sans-v23-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/font/Josefine_Sans/josefin-sans-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/font/Josefin_Sans/josefin-sans-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/font/Josefine_Sans/josefin-sans-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/font/Josefine_Sans/josefin-sans-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/font/Josefine_Sans/josefin-sans-v23-latin-regular.svg#JosefinSans') format('svg'); /* Legacy iOS */
+}
+
+/* stint-ultra-expanded-regular - latin */
+@font-face {
+  font-family: 'Stint Ultra Expanded';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/font/stint-ultra-expanded-v18-latin/stint-ultra-expanded-v18-latin-regular.svg#StintUltraExpanded') format('svg'); /* Legacy iOS */
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', Times, serif;
+}
+
+body{
+  background-color: #011C26;
+}
+
+img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.container-image{
+  overflow: hidden;
+}
+
+.container-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  font-size: 2rem;
+  color: #A3C4D9;
+}
+
+.logo{
+  padding-left: 1rem;
+  font-size: 2em;
+  color: #A3C4D9;
+  font-family: 'Stint Ultra Expanded', Times, serif;
+}

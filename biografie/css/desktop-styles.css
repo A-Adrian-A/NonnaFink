@@ -1,0 +1,70 @@
+.content{
+  height: calc(100vh - 1rem - 4rem);
+}
+
+p {
+  font-size: 1.5rem;
+}
+.container-image img{
+  display: block;
+  height: auto;
+  margin-top: 0.67em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-image {
+  direction: ltr;
+  overflow: visible;
+}
+
+h2{
+  font-size: 3rem;
+  margin:0;
+}
+a{
+  cursor: pointer;
+}
+
+.logo{
+  height: 100vh;
+}
+
+.logo h1{
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 4rem;
+  color: #5888A6;
+  font-family: 'Stint Ultra Expanded', Times, serif;
+}
+
+.container-text h1{
+  font-family: 'Josefin Sans';
+  font-size: 4rem;
+  color: #B81C3F;
+  margin-top: 2rem;
+}
+
+.container-text {
+  display: block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+
+table {
+  margin-top: 1rem;
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Josefin Sans';
+  text-align: left;
+  color: #A3C4D9;
+  width: 90%;
+  border-spacing: 1rem 3rem;
+}
+
