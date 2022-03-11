@@ -42,11 +42,7 @@ body{
   grid-template-columns:  8rem 1fr 1fr;
 }
 
-img {
-  height: 100vh; 
-  object-fit: cover;
 
-}
 
 .container-image{
   direction: rtl;
