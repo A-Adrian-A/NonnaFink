@@ -1,0 +1,31 @@
+.array {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galerie li {
+  height: 40vh;
+  flex-grow: 1;
+  list-style: none;
+  margin-bottom: 10px;
+  /*     overflow: hidden; */
+}
+
+img {
+
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: scale-down;
+
+}
+
+.galerie img:hover {
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.767);
+  transform: scale(1.02);
+  transition: all 0.5s;
+}
+#galerie-title{
+  color: #3BEBB9;
+}

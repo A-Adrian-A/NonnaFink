@@ -1,0 +1,96 @@
+.small-navigation{
+  position: fixed;
+  top:0;
+  
+}
+
+#menu {
+  background-color: #8eeb2f;
+  -webkit-mask: url(./icon/menu.svg) no-repeat center;
+  mask: url(./icon/menu.svg) no-repeat center;
+}
+
+.nav-logo {
+  position: sticky;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  align-items: center;
+  margin-right: 24px;
+  margin-top: 1rem;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-orientation: mixed;
+  font-size: 2rem;
+  background: #623eb5;
+  color: #3eb489;
+  color: #8eeb2f;
+  font-family: "Stint Ultra Expanded", Times, serif;
+  z-index: 100;
+}
+
+.logo-text {
+  margin-left: 40px;
+}
+
+.nav-circle1 {
+  position: fixed;
+  background-color: #623eb5;
+  border-radius: 50%;
+  width: 242vw;
+  height: 156vh;
+  left: -111vw;
+  top: -96vh;
+}
+.nav-circle2 {
+  position: fixed;
+  background-color: #8259E3;
+  border-radius: 50%;
+  width: 258vw;
+  height: 156vh;
+  left: -122vw;
+  top: -90vh;
+}
+
+.small-navigation ul {
+  position: fixed;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.small-navigation li {
+  text-align: left;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+
+.small-navigation a {
+  font-family: "Josefin Sans", Times, serif;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#email {
+  background-color: white;
+  -webkit-mask: url(./icon/email.svg) no-repeat center;
+  mask: url(./icon/email.svg) no-repeat center;
+}
+
+#instagram {
+  background-color: white;
+  -webkit-mask: url(./icon/instagram.svg) no-repeat center;
+  mask: url(./icon/instagram.svg) no-repeat center;
+}
+
+#linkedin {
+  background-color: white;
+  -webkit-mask: url(./icon/linkedin.svg) no-repeat center;
+  mask: url(./icon/linkedin.svg) no-repeat center;
+}
+
+.small-navigation .icon {
+  margin-left: 20px;
+  margin-bottom: 0;
+}

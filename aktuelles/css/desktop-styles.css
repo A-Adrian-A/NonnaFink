@@ -17,13 +17,6 @@ h2{
 a{
   cursor: pointer;
 }
-
-img {
-  height: 100vh; 
-  object-fit: cover;
-
-}
-
 .logo h1{
   writing-mode: vertical-lr;
   text-orientation: mixed;

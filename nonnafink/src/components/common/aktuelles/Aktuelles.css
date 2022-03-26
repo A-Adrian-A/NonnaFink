@@ -1,0 +1,33 @@
+
+.aktuelles .container-image{
+  direction: rtl;
+  overflow: hidden;
+}
+
+#aktuelles-img{
+  max-width: 100%;
+  display: block;
+}
+
+
+.aktuelles img{
+  height: 100vh;
+object-fit: cover;
+}
+
+
+#aktuelles-title{
+  color: #D852EB;
+}
+
+.fourtysixty{
+  display: grid;
+  grid-template-columns: 62% 38%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .fourtysixty{
+    display: block;
+  }
+}

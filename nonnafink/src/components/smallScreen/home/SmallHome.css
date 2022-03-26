@@ -1,0 +1,45 @@
+.small-home {
+  padding: 1rem;
+}
+
+.small-home .bottom-border{
+position: absolute;
+top:3vw;
+height:26vh;
+}
+
+.small-home .bubble-container{
+position: relative;
+height:33vw;
+
+}
+.small-home  #news {
+  position: absolute;
+  top:2vw;
+  left:3vw;
+  height: 12vw;
+  width: 12vw;
+  font-size: 3.5vw;
+  background-color: #D852EB;
+
+}
+.small-home #contact {
+  position: absolute;
+  left:22vw;
+  top:18vw;
+  height: 17vw;
+  width: 17vw;
+  font-size: 5vw;
+  background-color: #EB52AC; 
+  margin-bottom: 1rem;
+}
+.small-home #about {
+  margin: 0;
+  position: absolute;
+  left:52vw;
+  top:3vw;
+  height: 24vw;
+  width: 24vw;
+  font-size: 6vw;
+  background-color: #B81C3F;
+}

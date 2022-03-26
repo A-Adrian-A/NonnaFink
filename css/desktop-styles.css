@@ -60,7 +60,8 @@ body{
   text-orientation: mixed;
   text-align: center;
   font-size: 4rem;
-  color: #5888A6;
+  color: #3eb489;
+  color: #8EEB2F;
   font-family: 'Stint Ultra Expanded', Times, serif;
 }
 
@@ -81,7 +82,7 @@ nav ul {
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style-type: none;
   
 }

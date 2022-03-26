@@ -1,0 +1,75 @@
+
+.navigation {
+  border-bottom: 1px solid #A3C4D9;
+}
+
+.navigation ul {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation a {
+  font-family: 'Josefin Sans', Times, serif;
+  color: #A3C4D9;
+  font-size: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navigation a:hover ,.navigation .icon:hover  {
+  color: #EBA13B;
+
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+#email {
+  background-color: #A3C4D9;
+  -webkit-mask: url(./icon/email.svg) no-repeat center;
+  mask: url(./icon/email.svg) no-repeat center;
+}
+
+#instagram {
+  background-color: #A3C4D9;
+  -webkit-mask: url(./icon/instagram.svg) no-repeat center;
+  mask: url(./icon/instagram.svg) no-repeat center;
+}
+
+#linkedin {
+  background-color: #A3C4D9;
+  -webkit-mask: url(./icon/linkedin.svg) no-repeat center;
+  mask: url(./icon/linkedin.svg) no-repeat center;
+}
+
+#email:hover {
+  background-color: #EBA13B;
+  -webkit-mask: url(./icon/email.svg) no-repeat center;
+  mask: url(./icon/email.svg) no-repeat center;
+}
+
+#instagram:hover {
+  background-color: #EBA13B;
+  -webkit-mask: url(./icon/instagram.svg) no-repeat center;
+  mask: url(./icon/instagram.svg) no-repeat center;
+}
+
+#linkedin:hover {
+  background-color: #EBA13B;
+  -webkit-mask: url(./icon/linkedin.svg) no-repeat center;
+  mask: url(./icon/linkedin.svg) no-repeat center;
+}
+

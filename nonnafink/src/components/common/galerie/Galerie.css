@@ -1,0 +1,34 @@
+.row{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin-right: 2rem;
+}
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 22%;
+  max-width: 24%;
+  padding: 0 0.5rem;
+}
+
+
+.column img{
+  margin-bottom: 1rem;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#galerie-title{
+  color: #3BEBB9;
+}
+
+
+.galerie img:hover {
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.767);
+  transform: scale(1.02);
+  transition: all 0.5s;
+}

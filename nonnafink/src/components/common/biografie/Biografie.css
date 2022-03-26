@@ -1,0 +1,41 @@
+#bio-title{
+  color: #B81C3F;
+}
+
+.container-text {
+  display: block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+
+#bio-image{
+  display: block;
+  height: auto;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Josefin Sans';
+  text-align: left;
+  color: #A3C4D9;
+  width: 90%;
+  border-spacing: 0.5rem 0.7rem;
+}
+
+.fiftyfifty{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1000px) {
+  .fiftyfifty{
+    display: block;
+  }
+}
