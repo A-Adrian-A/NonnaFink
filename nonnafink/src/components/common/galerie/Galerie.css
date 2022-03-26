@@ -4,6 +4,7 @@
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   margin-right: 2rem;
+  justify-content: center;
 }
 
 .column {
@@ -12,7 +13,6 @@
   max-width: 24%;
   padding: 0 0.5rem;
 }
-
 
 .column img{
   margin-bottom: 1rem;
@@ -24,11 +24,20 @@
   color: #3BEBB9;
 }
 
-
 .galerie img:hover {
   filter: blur(0px);
   opacity: 1;
   box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.767);
   transform: scale(1.02);
   transition: all 0.5s;
+}
+
+@media screen and (max-width: 1000px) {
+  .column {
+    -ms-flex: 90%; /* IE10 */
+    flex: 90%;
+    max-width: 88%;
+    padding: 0 0.5rem;
+  }
+
 }
