@@ -1,10 +1,10 @@
-.row{
+.row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  margin-right: 2rem;
   justify-content: center;
+  margin: 1rem;
 }
 
 .column {
@@ -14,14 +14,18 @@
   padding: 0 0.5rem;
 }
 
-.column img{
+.container {
+  position: relative;
+}
+
+.column img {
   margin-bottom: 1rem;
   vertical-align: middle;
   width: 100%;
 }
 
-#galerie-title{
-  color: #3BEBB9;
+#galerie-title {
+  color: #3bebb9;
 }
 
 .galerie img:hover {
@@ -32,12 +36,20 @@
   transition: all 0.5s;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   .column {
-    -ms-flex: 90%; /* IE10 */
-    flex: 90%;
-    max-width: 88%;
+    -ms-flex: 47%;
+    flex: 47%;
+    max-width: 48%;
     padding: 0 0.5rem;
   }
+}
 
+@media screen and (max-width: 1000px) {
+  .column {
+    -ms-flex: 90%;
+    flex: 98%;
+    max-width: 98%;
+    padding: 0 0.5rem;
+  }
 }

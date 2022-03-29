@@ -33,7 +33,7 @@ class Aktuelles extends Component {
 
           </div>
           <div>
-          {this.props.isDesktop ? (<div className="container-image">
+          {this.props.isBigScreen ? (<div className="container-image">
             <div class="central-overflow">
               <img id='aktuelles-img' src={Bild} alt="Nonna"></img>
             </div>

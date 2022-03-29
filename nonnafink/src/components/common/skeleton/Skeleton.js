@@ -9,7 +9,7 @@ class Skeleton extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { showMenu: false };
+    this.state = { showMenu: true };
     this.handleBodyClick = this.handleBodyClick.bind(this);
     this.handleNavigationClick = this.handleNavigationClick.bind(this);
   }
@@ -34,10 +34,10 @@ class Skeleton extends Component {
     return (
       <div>
         <header>
-        {this.props.isDesktop ? (<Navigation></Navigation>):(<SmallNavigation showMenu={this.state.showMenu} handleClick={this.handleNavigationClick}></SmallNavigation>)}
+        {this.props.isSmallScreen ? (<Navigation></Navigation>):(<SmallNavigation showMenu={this.state.showMenu} handleClick={this.handleNavigationClick}></SmallNavigation>)}
         </header>
         <div  className="body">
-        {this.props.isDesktop ? ( 
+        {this.props.isSmallScreen ? ( 
           <div className="logo">
             Nonna Fink
           </div>):(<></>)}

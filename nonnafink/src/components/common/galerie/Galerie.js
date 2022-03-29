@@ -3,40 +3,55 @@ import './Galerie.css';
 const imgages = [
   {
     id: 1,
-    url: require('./img/1_small.jpg'),
+    url: require('../../../img/1_small.jpg'),
   },
   {
     id: 2,
-    url: require('./img/2_small.jpg'),
+    url: require('../../../img/2_small.jpg'),
   },
   {
     id: 3,
-    url: require('./img/3_small.jpg'),
+    url: require('../../../img/3_small.jpg'),
   },
   {
     id: 4,
-    url: require('./img/4_small.jpg'),
+    url: require('../../../img/4_small.jpg'),
   },
   {
     id: 5,
-    url: require('./img/5_small.jpg'),
+    url: require('../../../img/5_small.jpg'),
   },
   {
     id: 6,
-    url: require('./img/6_small.jpg'),
+    url: require('../../../img/6_small.jpg'),
   },
   {
     id: 7,
-    url: require('./img/7_small.jpg'),
+    url: require('../../../img/7_small.jpg'),
   },
   {
     id: 8,
-    url: require('./img/8_small.jpg'),
+    url: require('../../../img/8_small.jpg'),
   },
   {
     id: 9,
-    url: require('./img/10_small.jpg'),
+    url: require('../../../img/10_small.jpg'),
   },
+  {
+    id: 10,
+    url: require('../../../icon/play.svg'),
+  },
+];
+
+const movies = [
+  {
+    id: 1,
+    url: require('../../../mov/Schwesternliebe_small.mp4'),
+  },
+  {
+    id: 2,
+    url: require('../../../mov/Die_Kommissarin_small.mp4'),
+  }
 ];
 
 class Galerie extends Component {
@@ -75,6 +90,10 @@ class Galerie extends Component {
             <a href={imgages[7].url} target="_blank" rel="noreferrer">
               <img src={imgages[7].url} alt="Nonna"></img>
             </a>
+            <video controls>
+              <source src={movies[0].url} type="video/mp4"></source>
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div class="column">
             <a href={imgages[8].url} target="_blank" rel="noreferrer">
@@ -83,6 +102,10 @@ class Galerie extends Component {
             <a href={imgages[5].url} target="_blank" rel="noreferrer">
               <img src={imgages[5].url} alt="Nonna"></img>
             </a>
+              <video controls>
+                <source src={movies[1].url} type="video/mp4"></source>
+                Your browser does not support the video tag.
+              </video>
           </div>
         </div>
       </div>

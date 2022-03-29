@@ -14,7 +14,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isDesktop: false //This is where I am having problems
+      isDesktop: false 
     };
 
     this.updatePredicate = this.updatePredicate.bind(this);
@@ -29,20 +29,22 @@ class App extends Component {
   }
 
   updatePredicate() {
-    this.setState({ isDesktop: window.innerWidth > 1000 });
+    this.setState({ isBigScreen: window.innerWidth > 1000 });
+    this.setState({ isSmallScreen: window.innerWidth > 500 });
   }
 
   render() {
-    const isDesktop = this.state.isDesktop;
+    const isBigScreen = this.state.isBigScreen;
+    const isSmallScreen = this.state.isSmallScreen;
     return (
       <BrowserRouter>
         <div className="App">
-          <Skeleton isDesktop={isDesktop}>
+          <Skeleton isBigScreen={isBigScreen} isSmallScreen={isSmallScreen}>
             <Routes>
-              <Route path="/" element={isDesktop ?(<Home></Home>):(<SmallHome></SmallHome>)}>
+              <Route path="/" element={isBigScreen ?(<Home></Home>):(<SmallHome></SmallHome>)}>
               </Route>
               <Route path="/biografie" element={<Biografie></Biografie>}></Route>
-              <Route path="/aktuelles" element={<Aktuelles isDesktop={isDesktop}></Aktuelles>}></Route>
+              <Route path="/aktuelles" element={<Aktuelles isBigScreen={isBigScreen}></Aktuelles>}></Route>
               <Route path="/galerie" element={<Galerie></Galerie>}></Route>
             </Routes>
 

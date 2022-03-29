@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import './SmallHome.css';
-import movie from './mov/Die Kommissarin.mp4'
+import movie from '../../../mov/SDL_Showreel_small.mp4'
 class SmallHome extends Component {
   render() {
     return (

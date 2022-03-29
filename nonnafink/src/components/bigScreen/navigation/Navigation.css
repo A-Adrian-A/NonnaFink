@@ -4,12 +4,10 @@
 }
 
 .navigation ul {
-  padding-left: 40px;
-  padding-right: 40px;
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  
+  padding-left: 0;
 }
 
 a {
@@ -39,37 +37,37 @@ a {
 
 #email {
   background-color: #A3C4D9;
-  -webkit-mask: url(./icon/email.svg) no-repeat center;
-  mask: url(./icon/email.svg) no-repeat center;
+  -webkit-mask: url(../../../icon/email.svg) no-repeat center;
+  mask: url(../../../icon/email.svg) no-repeat center;
 }
 
 #instagram {
   background-color: #A3C4D9;
-  -webkit-mask: url(./icon/instagram.svg) no-repeat center;
-  mask: url(./icon/instagram.svg) no-repeat center;
+  -webkit-mask: url(../../../icon/instagram.svg) no-repeat center;
+  mask: url(../../../icon/instagram.svg) no-repeat center;
 }
 
 #linkedin {
   background-color: #A3C4D9;
-  -webkit-mask: url(./icon/linkedin.svg) no-repeat center;
-  mask: url(./icon/linkedin.svg) no-repeat center;
+  -webkit-mask: url(../../../icon/linkedin.svg) no-repeat center;
+  mask: url(../../../icon/linkedin.svg) no-repeat center;
 }
 
 #email:hover {
   background-color: #EBA13B;
-  -webkit-mask: url(./icon/email.svg) no-repeat center;
-  mask: url(./icon/email.svg) no-repeat center;
+  -webkit-mask: url(../../.../../../icon/email.svg) no-repeat center;
+  mask: url(../../../icon/email.svg) no-repeat center;
 }
 
 #instagram:hover {
   background-color: #EBA13B;
-  -webkit-mask: url(./icon/instagram.svg) no-repeat center;
-  mask: url(./icon/instagram.svg) no-repeat center;
+  -webkit-mask: url(../../../icon/instagram.svg) no-repeat center;
+  mask: url(../../../icon/instagram.svg) no-repeat center;
 }
 
 #linkedin:hover {
   background-color: #EBA13B;
-  -webkit-mask: url(./icon/linkedin.svg) no-repeat center;
-  mask: url(./icon/linkedin.svg) no-repeat center;
+  -webkit-mask: url(../../../icon/linkedin.svg) no-repeat center;
+  mask: url(../../../icon/linkedin.svg) no-repeat center;
 }
 
