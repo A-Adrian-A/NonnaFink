@@ -13,6 +13,7 @@
 .nav-logo {
   position: sticky;
   display: grid;
+  width:90vw;
   grid-template-columns: 1fr 60px;
   align-items: center;
   margin-right: 24px;
@@ -26,6 +27,7 @@
   color: #8eeb2f;
   font-family: "Stint Ultra Expanded", Times, serif;
   z-index: 100;
+  padding:0.2rem
 }
 
 .logo-text {
@@ -36,19 +38,19 @@
   position: fixed;
   background-color: #623eb5;
   border-radius: 50%;
-  width: 242vw;
-  height: 156vh;
-  left: -111vw;
-  top: -96vh;
+  width: 1739px;
+  height: 889px;
+  left: -798px;
+  top: -547px;
 }
 .nav-circle2 {
   position: fixed;
   background-color: #8259E3;
   border-radius: 50%;
-  width: 258vw;
-  height: 156vh;
-  left: -122vw;
-  top: -90vh;
+  width: 2322px;
+  height: 886px;
+  left: -1098px;
+  top: -511px;
 }
 
 .small-navigation ul {
