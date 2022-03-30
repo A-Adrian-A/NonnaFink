@@ -46,11 +46,11 @@ const imgages = [
 const movies = [
   {
     id: 1,
-    url: require('../../../mov/Schwesternliebe_small.mp4'),
+    url: require('../../../mov/Schwesternliebe_small.webm'),
   },
   {
     id: 2,
-    url: require('../../../mov/Die_Kommissarin_small.mp4'),
+    url: require('../../../mov/Die_Kommissarin_small.webm'),
   }
 ];
 
@@ -102,10 +102,10 @@ class Galerie extends Component {
             <a href={imgages[5].url} target="_blank" rel="noreferrer">
               <img src={imgages[5].url} alt="Nonna"></img>
             </a>
-              <video controls>
-                <source src={movies[1].url} type="video/mp4"></source>
-                Your browser does not support the video tag.
-              </video>
+            <video controls>
+              <source src={movies[1].url} type="video/mp4"></source>
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>

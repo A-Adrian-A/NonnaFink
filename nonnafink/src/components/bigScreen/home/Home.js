@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import './Home.css';
-import movie from '../../../mov/SDL_Showreel_small.mp4'
+import movie from '../../../mov/SDL_Showreel_small.webm'
 class Home extends Component {
   render() {
     return (
