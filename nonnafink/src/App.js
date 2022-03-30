@@ -14,7 +14,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isDesktop: false 
+      isDesktop: false
     };
 
     this.updatePredicate = this.updatePredicate.bind(this);
@@ -41,9 +41,10 @@ class App extends Component {
         <div className="App">
           <Skeleton isBigScreen={isBigScreen} isSmallScreen={isSmallScreen}>
             <Routes>
-              <Route path="/" element={isBigScreen ?(<Home></Home>):(<SmallHome></SmallHome>)}>
+              <Route path="/" element={isBigScreen ? (<Home></Home>) : (<SmallHome></SmallHome>)}>
               </Route>
               <Route path="/biografie" element={<Biografie></Biografie>}></Route>
+              <Route path="/draft" element={<Home></Home>}></Route>
               <Route path="/aktuelles" element={<Aktuelles isBigScreen={isBigScreen}></Aktuelles>}></Route>
               <Route path="/galerie" element={<Galerie></Galerie>}></Route>
             </Routes>
