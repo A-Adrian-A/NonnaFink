@@ -24,7 +24,7 @@ const Home = () => {
           In der Serie "Die Rosenheim-Cops" war Nonna 2014 in 10 Folgen zu sehen. Im Jahr 2016 spielte sie als Paketbotin
           Anni Hoyer in
           den Episoden 2446 bis 2470 in der Telenovela Sturm der Liebe mit.</p>
-        <a id="news" class="bubble" href="/aktuelles/index.html">
+        <a id="news" class="bubble" href="/aktuelles">
           <div>News</div>
         </a>
         <a id="contact" class="bubble" href="mailto:me@nonnafink.com">
@@ -38,7 +38,7 @@ const Home = () => {
             Your browser does not support the video tag.
           </video>
         </div>
-        <a id="about" class="bubble" href="/biografie/index.html">
+        <a id="about" class="bubble" href="/biografie">
           <div>Biografie</div>
         </a>
       </div>
