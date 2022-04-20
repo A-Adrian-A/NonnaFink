@@ -20,14 +20,10 @@ class SmallNavigation extends Component {
         <nav className='static' >
         <div className='nav-circle2' onClick={this.handleClick} hidden={this.props.showMenu} ></div>
         <div className='nav-circle1' onClick={this.handleClick} hidden={this.props.showMenu} ></div>
-          
           <div className='nav-logo' onClick={this.handleClick}>
             <div classname='nav-left'>
               <div className='logo-text' onClick={this.handleClick.bind(this)} >Nonna Fink</div>
               <ul hidden={this.props.showMenu} >
-                <li>
-                  <NavLink to="/" activeClassName="selected">Home</NavLink>
-                </li>
                 <li>
                   <NavLink to="/biografie" activeClassName="selected">Biografie</NavLink>
                 </li>
