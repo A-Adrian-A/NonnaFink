@@ -1,8 +1,9 @@
 
 import React, { Component } from 'react';
 import './Home.css';
-import movie from '../../../mov/SDL_Showreel_small.webm'
+import background from '../../../img/NONNAREGINAFINK-14-F.jpg';
 import { MatomoContext, useMatomo } from '@datapunt/matomo-tracker-react';
+import LandingNavigation from '../../common/landing_navigation/LandingNavigation';
 
 
 const Home = () => {
@@ -11,37 +12,17 @@ const Home = () => {
 
   // Track page view
   React.useEffect(() => {
-    console.log("here We track");
     trackPageView();
   }, []);
 
   return (
-    <div className='fiftyfifty'>
-      <div className="text-container">
-        <h1 id="home-title">About me</h1>
-        <p>Regina geborene Nonna Fink startet ihre Schauspielkarriere an der European Film Actor School in Zürich.<br></br><br></br>
+    <div className='home'>
+      <div className='navigation-container'>
+        <LandingNavigation></LandingNavigation>
+      </div>
+      <h1 className='title'>Nonna Fink  <br></br>Schauspielerin</h1>
+      <img src={background} alt='background'></img>
 
-          In der Serie "Die Rosenheim-Cops" war Nonna 2014 in 10 Folgen zu sehen. Im Jahr 2016 spielte sie als Paketbotin
-          Anni Hoyer in
-          den Episoden 2446 bis 2470 in der Telenovela Sturm der Liebe mit.</p>
-        <a id="news" class="bubble" href="/aktuelles">
-          <div>News</div>
-        </a>
-        <a id="contact" class="bubble" href="mailto:me@nonnafink.com">
-          <div>Contact</div>
-        </a>
-      </div>
-      <div className="image-container">
-        <div className="video-container">
-          <video controls>
-            <source src={movie} type="video/mp4"></source>
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <a id="about" class="bubble" href="/biografie">
-          <div>Biografie</div>
-        </a>
-      </div>
     </div>
   );
 

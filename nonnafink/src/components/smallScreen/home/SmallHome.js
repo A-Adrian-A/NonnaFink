@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import './SmallHome.css';
-import movie from '../../../mov/SDL_Showreel_small.webm'
+import movie from '../../../mov/SDL_Showreel-SMALL.webm'
 class SmallHome extends Component {
   render() {
     return (

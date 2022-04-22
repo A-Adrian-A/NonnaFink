@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { MatomoProvider, createInstance } from '@datapunt/matomo-tracker-react'
+import { BrowserRouter} from 'react-router-dom';
 
 const instance = createInstance({
   urlBase: 'https://nonnafink.com',
@@ -29,7 +30,9 @@ const instance = createInstance({
 ReactDOM.render(
   <React.StrictMode>
     <MatomoProvider value={instance}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </MatomoProvider>
   </React.StrictMode>,
   document.getElementById('root')

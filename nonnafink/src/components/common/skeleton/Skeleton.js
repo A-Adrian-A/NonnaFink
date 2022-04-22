@@ -1,54 +1,48 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import SmallNavigation from '../../smallScreen/smallnavigation/SmallNavigation';
 import Navigation from '../../bigScreen/navigation/Navigation';
+import { useLocation } from 'react-router-dom';
 
 
 import './Skeleton.css'
 
-class Skeleton extends Component {
+function Skeleton(props) {
+  const [showMenu, setShowMenu] = useState(true);
 
-  constructor(props) {
-    super(props);
-    this.state = { showMenu: true };
-    this.handleBodyClick = this.handleBodyClick.bind(this);
-    this.handleNavigationClick = this.handleNavigationClick.bind(this);
+
+
+  const handleBodyClick = () => {
+    setShowMenu(!showMenu)
   }
 
-  handleBodyClick() {
-    console.log(this.state.showMenu)
-     this.setState(prevState => ({ 
-       showMenu: true
-      })); 
-    }
-
-    handleNavigationClick() {
-      console.log(this.state.showMenu)
-       this.setState(prevState => ({ 
-         showMenu: !this.state.showMenu
-        })); 
-      }
-    
+  const handleNavigationClick = () => {
+    setShowMenu(!showMenu)
+  }
 
 
-  render() {
-    return (
-      <div>
-        <header>
-        {this.props.isSmallScreen ? (<Navigation></Navigation>):(<SmallNavigation showMenu={this.state.showMenu} handleClick={this.handleNavigationClick}></SmallNavigation>)}
-        </header>
-        <div  className="body">
-        {this.props.isSmallScreen ? ( 
+ 
+  return (
+    <div>
+      <header>
+      
+        {props.isSmallScreen ? (<SmallNavigation showMenu={showMenu} handleClick={handleNavigationClick}></SmallNavigation>)
+          : (<Navigation></Navigation>)}
+
+      </header>
+      <div className="body">
+        {props.isSmallScreen  ? 
+        (<></>):(
           <div className="logo">
             Nonna Fink
-          </div>):(<></>)}
-          <div onClick={()=>this.handleBodyClick()} className="content">
-            {this.props.children}
-          </div>
+          </div>)  }
+        <div onClick={() => handleBodyClick()} className="content">
+          {props.children}
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
+
 
 export default Skeleton;
 

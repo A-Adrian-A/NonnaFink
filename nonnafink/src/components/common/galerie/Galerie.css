@@ -7,15 +7,21 @@
   margin: 1rem;
 }
 
+.galerie video {
+  display: block;
+  width: 100%;
+}
+
 .column {
   -ms-flex: 25%; /* IE10 */
   flex: 22%;
   max-width: 24%;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
-.container {
-  position: relative;
+.galerie video{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .column img {
@@ -36,6 +42,7 @@
   transition: all 0.5s;
 }
 
+
 @media screen and (max-width: 1400px) {
   .column {
     -ms-flex: 47%;
@@ -51,5 +58,12 @@
     flex: 98%;
     max-width: 98%;
     padding: 0 0.5rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .body {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
   }
 }

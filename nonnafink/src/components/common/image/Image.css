@@ -1,0 +1,23 @@
+.galerie-img {
+  display: inline-block;
+}
+
+
+.photographer {
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  visibility: hidden;
+  z-index: 3;
+  color: white;
+}
+
+.galerie-img:hover .photographer {
+  visibility: visible;
+  transition-delay: 0.3s;
+}
+
+.galerie-img {
+  width: 100%;
+  position: relative;
+}
