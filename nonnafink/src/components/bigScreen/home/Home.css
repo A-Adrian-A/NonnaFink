@@ -1,4 +1,4 @@
-.home img{
+.home img {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.home{
+.home {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -16,35 +16,62 @@
   overflow-y: hidden;
 }
 
-body , html{
+.home ul {
+  padding: 0;
+}
+
+body,
+html {
   height: 100%;
   width: 100%;
   margin: 0;
 }
 
 .home .title {
-position: absolute;
-top:5%;
-left:2%;
-font-size: 4rem;
-text-align: left;
-color: #12545c;
-color: #61888C;
-color: #61888C;
-color: #456063;
-color:black;
-font-family: 'Stint Ultra Expanded';
-/* color: #3F2109;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  font-size: 4rem;
+  text-align: left;
+  color: #12545c;
+  color: #61888c;
+  color: #61888c;
+  color: #456063;
+  color: black;
+  font-family: "Stint Ultra Expanded";
+  /* color: #3F2109;
 color: #6B380F;
 color: #402414; */
 }
 
-.body{
+.body {
   display: block;
   margin: 0;
 }
-.navigation-container{
+
+.navigation-container {
   position: absolute;
-  bottom:5%;
-  left:2%;
+  bottom: 5%;
+  left: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+  .navigation-container {
+    bottom: 14%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navigation-container {
+    bottom: 20%;
+    left: 2%;
+  }
+
+  .home .title {
+    top: 1%;
+    left: 2%;
+    font-size: 2rem;
+    margin: 0;
+  }
 }

@@ -4,3 +4,37 @@ html {
   width: 100%;
   margin: 0;
 }
+
+.fadeIn {
+  animation: 0.5s fadeIn forwards;
+}
+
+.fadeIn_landing {
+  animation: 2s fadeIn_landing forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(0px, 100vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadeIn_landing {
+  from {
+    opacity: 0;
+    transform: translate(-20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+
