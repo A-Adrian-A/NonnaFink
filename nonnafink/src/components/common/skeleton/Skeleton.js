@@ -22,24 +22,17 @@ function Skeleton(props) {
 
  
   return (
-    <div>
+    <>
       <header>
       
-        {props.isSmallScreen ? (<SmallNavigation showMenu={showMenu} handleClick={handleNavigationClick}></SmallNavigation>)
-          : (<Navigation></Navigation>)}
+        {props.isSmallScreen ? (<></>)
+          : (<Navigation isClicked={props.isClicked}></Navigation>)}
 
       </header>
-      <div className="body">
-        {props.isSmallScreen  ? 
-        (<></>):(
-          <div className="logo">
-            Nonna Fink
-          </div>)  }
         <div onClick={() => handleBodyClick()} className="content">
           {props.children}
         </div>
-      </div>
-    </div>
+      </>
   );
 }
 

@@ -1,41 +1,62 @@
-#bio-title{
-  color: #B81C3F;
+#biografie {
+  width: 100%;
 }
 
-.container-text {
-  display: block;
-  margin-right: 1rem;
-  margin-left: 1rem;
+#biografie h1 {
+  margin-bottom: 0;
+  margin-top: 1.5rem;
 }
 
+#biografie .container-image {
+  width: 100%;
+}
 
-#bio-image{
+#bio-title {
+  color: #b81c3f;
+}
+
+#biografie .container-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vw;
+}
+
+#bio-image {
   display: block;
   height: auto;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
-table {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Josefin Sans';
-  text-align: left;
-  color: #A3C4D9;
-  width: 90%;
-  border-spacing: 0.5rem 0.7rem;
+#biografie p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
 }
 
-.fiftyfifty{
+.fiftyfifty {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
-  .fiftyfifty{
+  .fiftyfifty {
     display: block;
   }
+    #biografie p {
+    width: auto;
+    margin: 1rem;
+  }
+  #biografie .container-text {
+    display: initial;
+  }
+
 }

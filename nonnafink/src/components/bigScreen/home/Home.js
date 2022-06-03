@@ -2,7 +2,7 @@
 import  { useEffect } from 'react';
 import './Home.css';
 import background from '../../../img/NONNAREGINAFINK-14-F.jpg';
-import {  useMatomo } from '@datapunt/matomo-tracker-react';
+import {  useMatomo } from '@jonkoops/matomo-tracker-react';
 import LandingNavigation from '../../common/landing_navigation/LandingNavigation';
 
 

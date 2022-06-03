@@ -7,7 +7,11 @@
   margin: 1rem;
 }
 
-.galerie video {
+#galerie h1 {
+  margin-top: 3rem;
+}
+
+#galerie video {
   display: block;
   width: 100%;
 }
@@ -19,7 +23,7 @@
   padding: 0 1rem;
 }
 
-.galerie video{
+#galerie video{
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -34,7 +38,7 @@
   color: #3bebb9;
 }
 
-.galerie img:hover {
+#galerie img:hover {
   filter: blur(0px);
   opacity: 1;
   box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.767);
@@ -61,9 +65,9 @@
   }
 }
 
-@media screen and (min-width: 500px) {
-  .body {
-    display: grid;
-    grid-template-columns: 4rem 1fr;
-  }
+@media screen and (max-width: 500px) {
+#galerie h1 {
+  margin-top: 0
+  ;
+}
 }

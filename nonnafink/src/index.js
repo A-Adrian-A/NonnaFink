@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { MatomoProvider, createInstance } from '@datapunt/matomo-tracker-react'
+import { MatomoProvider, createInstance } from '@jonkoops/matomo-tracker-react'
 import { BrowserRouter} from 'react-router-dom';
 
 const instance = createInstance({

@@ -195,7 +195,7 @@ class Galerie extends Component {
 
   render() {
     return (
-      <div className='galerie'>
+      <div id='galerie'>
         <h1 id='galerie-title'>Galerie</h1>
         <div class="row">
           <div class="column">

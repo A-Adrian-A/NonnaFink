@@ -13,6 +13,17 @@ html {
   animation: 2s fadeIn_landing forwards;
 }
 
+
+ h1{
+  font-family: "Stint Ultra Expanded";
+  font-size: 6vh;
+  font-weight: lighter;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

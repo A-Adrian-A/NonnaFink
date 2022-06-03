@@ -1,49 +1,44 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 import './Navigation.css'
-import { NavLink } from "react-router-dom";
+
+import { useEffect, useState } from 'react';
 
 
-class Navigation extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isBigScreen: false 
-    };
+function Navigation(props) {
 
-    this.updatePredicate = this.updatePredicate.bind(this);
-  }
-  componentDidMount() {
-    this.updatePredicate();
-    window.addEventListener("resize", this.updatePredicate);
-  }
+  const [isBigScreen,setBigScreen] = useState(false);
 
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updatePredicate);
-  }
+  useEffect(() => {
+    function updatePredicate() {
+      setBigScreen({ isBigScreen: window.innerWidth > 680 });
+    }
+    updatePredicate();
+    window.addEventListener("resize", updatePredicate);
+    return function cleanup() {
+      window.removeEventListener("resize", updatePredicate);
+    }
+  });
 
-  updatePredicate() {
-    this.setState({ isBigScreen: window.innerWidth > 680 });
-  }
-  render() {
-    return (
-      <nav className='navigation'>
-        <ul>
-          <NavLink to="/biografie" activeClassName="selected">Biografie</NavLink>
-          <NavLink to="/aktuelles" activeClassName="selected">Aktuelles</NavLink>
-          <NavLink to="/galerie" activeClassName="selected">Galerie</NavLink>
-          {this.state.isBigScreen?( <li><a href="mailto:me@nonnafink.com">Kontakt &ensp;
-            <div class="icon" id="email"> </div>
+  
+  return (
+    <nav className='navigation'>
+      <ul>
+        <a  href="#biografie" activeClassName="selected">Biografie</a>
+        <a href="#aktuelles" activeClassName="selected">Aktuelles</a>
+        <a href="#galerie" activeClassName="selected">Galerie</a>
+        {isBigScreen ? (<li><a href="mailto:me@nonnafink.com">Kontakt &ensp;
+          <div class="icon" id="email"> </div>
+        </a>
+          <a href="https://www.instagram.com/nonnareginafink" target='_blank' rel='noreferrer'>
+            <div class="icon" id="instagram"></div>
           </a>
-            <a href="https://www.instagram.com/nonnareginafink" target='_blank' rel='noreferrer'>
-              <div class="icon" id="instagram"></div>
-            </a>
-          </li>):(<li><a href="mailto:me@nonnafink.com">Kontakt</a></li>)}
-        </ul>
-      </nav>
-    );
-  }
+        </li>) : (<li><a href="mailto:me@nonnafink.com">Kontakt</a></li>)}
+      </ul>
+    </nav>
+  );
 }
+
 
 export default Navigation;
 

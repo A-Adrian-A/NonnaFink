@@ -4,7 +4,6 @@ import './Card.css'
 class Card extends Component {
   render() {
     return (
-      <div>
       <div class="card">
         <div className='container-card'>
           <h2 className='card-title'>{this.props.title}</h2>
@@ -13,7 +12,6 @@ class Card extends Component {
             {this.props.children}
           </div>
         </div>
-      </div>
       </div>
     );
   }

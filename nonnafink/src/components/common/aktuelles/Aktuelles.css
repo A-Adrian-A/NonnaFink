@@ -1,7 +1,15 @@
+#aktuelles{
+  width: 100%;
+}
 
-.aktuelles .container-image{
-  direction: rtl;
+#aktuelles .container-image{
   overflow: hidden;
+  width: 100%;
+}
+
+#aktuelles .container-text{
+  display: flex;
+  flex-direction: column;
 }
 
 #aktuelles-img{
@@ -9,20 +17,34 @@
   display: block;
 }
 
+#aktuelles .container-cards{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
-.aktuelles img{
-  height: 100vh;
-object-fit: cover;
 }
 
+#aktuelles img{
+  width: 100%;
+ 
+    vertical-align: middle
+}
 
 #aktuelles-title{
   color: #D852EB;
 }
 
 .fourtysixty{
-  display: grid;
-  grid-template-columns: 62% 38%;
+   display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.fourtysixty div{
+overflow: hidden;
 }
 
 
