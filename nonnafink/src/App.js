@@ -5,9 +5,9 @@ import Home from './components/bigScreen/home/Home'
 import SmallHome from './components/smallScreen/home/SmallHome'
 import Aktuelles from './components/common//aktuelles/Aktuelles';
 import Galerie from './components/common//galerie/Galerie'
-import {  Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import { useState ,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function App() {
@@ -16,13 +16,14 @@ function App() {
   const location = useLocation();
   const [displayLocation, setDisplayLocation] = useState(location);
   const [transitionStage, setTransistionStage] = useState("");
-  const is_homeScreen = displayLocation.pathname.localeCompare("/") === 0
+  const is_homeScreen = displayLocation.pathname.localeCompare("/static/") === 0
   const isBigScreen = window.innerWidth > 1000;
   const isSmallScreen = window.innerWidth < 500;
 
 
 
   console.log("load Component " + transitionStage);
+  console.log("Pathname: " + displayLocation.pathname)
   useEffect(() => {
     if (is_homeScreen) {
       setTransistionStage("fadeIn_landing")
@@ -33,8 +34,8 @@ function App() {
         setTransistionStage("fadeIn")
       }
     }
-      
-    console.log("useEffect "+ transitionStage);
+
+    console.log("useEffect " + transitionStage);
   }, [location, is_homeScreen, displayLocation, transitionStage]);
 
   return (
@@ -48,22 +49,22 @@ function App() {
         }
       }}
     >
-    <div className="App">
-      {is_homeScreen ? (<Home></Home>) : (
-        <Skeleton isBigScreen={isBigScreen} isSmallScreen={isSmallScreen}>
-          <Routes location={displayLocation}>
-            <Route path="/" element={isBigScreen ? (<Home></Home>) : (<SmallHome></SmallHome>)}>
-            </Route>
-            <Route path="/biografie" element={<Biografie></Biografie>}></Route>
-            <Route path="/draft" element={<Home></Home>}></Route>
-            <Route path="/aktuelles" element={<Aktuelles isBigScreen={isBigScreen}></Aktuelles>}></Route>
-            <Route path="/galerie" element={<Galerie></Galerie>}></Route>
-          </Routes>
-        </Skeleton>
-      )}
+      <div className="App">
+        {is_homeScreen ? (<Home></Home>) : (
+          <Skeleton isBigScreen={isBigScreen} isSmallScreen={isSmallScreen}>
+            <Routes location={displayLocation}>
+              <Route path="/static" element={isBigScreen ? (<Home></Home>) : (<SmallHome></SmallHome>)}>
+              </Route>
+              <Route path="/biografie" element={<Biografie></Biografie>}></Route>
+              <Route path="/draft" element={<Home></Home>}></Route>
+              <Route path="/aktuelles" element={<Aktuelles isBigScreen={isBigScreen}></Aktuelles>}></Route>
+              <Route path="/galerie" element={<Galerie></Galerie>}></Route>
+            </Routes>
+          </Skeleton>
+        )}
       </div>
     </div>
-    );
+  );
 }
 
 
