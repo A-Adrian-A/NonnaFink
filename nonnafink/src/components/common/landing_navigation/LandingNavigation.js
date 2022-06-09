@@ -6,9 +6,9 @@ function LandingNavigation(props) {
   return (
     <div className='landing_navigation'>
       <ul>
-        <li> <a href="#biografie" activeClassName="selected">Biografie</a></li>
-        <li><a href="#aktuelles" activeClassName="selected">Aktuelles</a></li>
-        <li><a href="#galerie" activeClassName="selected">Galerie</a></li>
+        <li> <a href="#biografie" activeclassname="selected">Biografie</a></li>
+        <li><a href="#aktuelles" activeclassname="selected">Aktuelles</a></li>
+        <li><a href="#galerie" activeclassname="selected">Galerie</a></li>
         <li><a href="mailto:me@nonnafink.com">Kontakt</a></li>
       </ul>
     </div>

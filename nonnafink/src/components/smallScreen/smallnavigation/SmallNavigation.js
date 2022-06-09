@@ -6,11 +6,11 @@ class SmallNavigation extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { showMenu: props};
+    this.state = { showMenu: props };
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(){
+  handleClick() {
     this.props.handleClick();
   }
 
@@ -18,8 +18,8 @@ class SmallNavigation extends Component {
     return (
       <div className="small-navigation">
         <nav className='static' >
-        <div className='nav-circle2' onClick={this.handleClick} hidden={this.props.showMenu} ></div>
-        <div className='nav-circle1' onClick={this.handleClick} hidden={this.props.showMenu} ></div>
+          <div className='nav-circle2' onClick={this.handleClick} hidden={this.props.showMenu} ></div>
+          <div className='nav-circle1' onClick={this.handleClick} hidden={this.props.showMenu} ></div>
           <div className='nav-logo' onClick={this.handleClick}>
             <div classname='nav-left'>
               <div className='logo-text' onClick={this.handleClick.bind(this)} >Nonna Fink</div>
@@ -38,7 +38,7 @@ class SmallNavigation extends Component {
                 </li>
               </ul>
             </div>
-            {this.props.showMenu?(<div class="icon" id="menu" ></div>):(<></>)}       
+            {this.props.showMenu ? (<div className="icon" id="menu" ></div>) : (<></>)}
           </div>
         </nav>
       </div>

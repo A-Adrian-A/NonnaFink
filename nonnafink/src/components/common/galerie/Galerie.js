@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './Galerie.css';
 import Image from './../image/Image'
-const photographer = [
-  "Janine Guldener",
-  "Einbrandfotos"
-]
+
 const images = [
   {
     id: 1,
@@ -179,15 +176,15 @@ const images = [
 const movies = [
   {
     id: 1,
-    url: require('../../../mov/Schwesternliebe-SMALL.webm'),
+    url: require('../../../mov/Schwesternliebe-SMALL.mp4'),
   },
   {
     id: 2,
-    url: require('../../../mov/Die_Kommissarin-SMALL.webm'),
+    url: require('../../../mov/Die_Kommissarin-SMALL.mp4'),
   },
   {
     id: 3,
-    url: require('../../../mov/SDL_Showreel-SMALL.webm'),
+    url: require('../../../mov/SDL_Showreel-SMALL.mp4'),
   }
 ];
 
@@ -197,8 +194,8 @@ class Galerie extends Component {
     return (
       <div id='galerie'>
         <h1 id='galerie-title'>Galerie</h1>
-        <div class="row">
-          <div class="column">
+        <div className="row">
+          <div className="column">
             <Image image={images[0]} ></Image>
             <Image image={images[2]} ></Image>
             <Image image={images[8]} ></Image>
@@ -211,12 +208,12 @@ class Galerie extends Component {
             <Image image={images[14]} ></Image>
             <Image image={images[25]} ></Image>
           </div>
-          <div class="column">
+          <div className="column">
             <Image image={images[13]} ></Image>
             <Image image={images[26]} ></Image>
             <Image image={images[16]} ></Image>
             <Image image={images[17]} ></Image>
-            <Image image={images[11]} ></Image>
+            <Image image={images[21]} ></Image>
             <Image image={images[23]} ></Image>
             <video controls>
               <source src={movies[1].url} type="video/mp4"></source>
@@ -224,7 +221,7 @@ class Galerie extends Component {
             </video>
             <Image image={images[1]} ></Image>
           </div>
-          <div class="column">
+          <div className="column">
             <Image image={images[6]} ></Image>
             <video controls>
               <source src={movies[0].url} type="video/mp4"></source>
@@ -233,14 +230,13 @@ class Galerie extends Component {
             <Image image={images[20]} ></Image>
             <Image image={images[9]} ></Image>
             <Image image={images[27]} ></Image>
-            <Image image={images[21]} ></Image>
+
             <Image image={images[22]} ></Image>
             <Image image={images[19]} ></Image>
           </div>
-          <div class="column">
+          <div className="column">
             <Image image={images[18]} ></Image>
             <Image image={images[7]} ></Image>
-            <Image image={images[24]} ></Image>
             <Image image={images[23]} ></Image>
             <Image image={images[15]} ></Image>
             <Image image={images[5]} ></Image>

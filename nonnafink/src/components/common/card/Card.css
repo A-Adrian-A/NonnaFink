@@ -3,8 +3,9 @@
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  margin-bottom: 24px;
-  padding: 24px;
+  padding: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
   border-radius: 12px;
   max-width: 500px;
 }

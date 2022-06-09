@@ -36,14 +36,6 @@ body{
   width: 100%;
 }
 
-/* 
-@media screen and (min-width: 500px) {
-  .body{
-    display: grid; 
-    grid-template-columns: 4rem 1fr ;
-  }
-} */
-
 
 
 @media screen and (orientation: landscape) and (max-height: 500px)   {

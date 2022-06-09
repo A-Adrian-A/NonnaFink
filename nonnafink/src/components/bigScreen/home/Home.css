@@ -1,14 +1,14 @@
 .home img {
-  height: 100%;
   width: 100%;
+  height: auto;
   margin: 0;
-  object-fit: cover;
+
   box-sizing: border-box;
 }
 
 .home {
   position: relative;
-  height: 100vh;
+
 
   min-height: 100%;
   box-sizing: border-box;
@@ -30,52 +30,34 @@ html {
 
 .home .title {
   position: absolute;
-  top: 5%;
+  top: 1%;
   left: 2%;
   font-size: 4rem;
   text-align: left;
-  color: #12545c;
-  color: #61888c;
-  color: #61888c;
-  color: #456063;
-  color: black;
+  color: white;
   font-family: "Stint Ultra Expanded";
-  /* color: #3F2109;
-color: #6B380F;
-color: #402414; */
+
 }
 
 
 .navigation-container {
   position: absolute;
-  bottom: 5%;
+  top: 85vh;
   left: 2%;
 }
 
-@media screen and (max-width: 1000px) {
-  .navigation-container {
-    bottom: 14%;
-    left: 5%;
-  }
-}
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 600px) {
   .navigation-container {
-    bottom: 20%;
+    bottom: 5vh;
     left: 2%;
   }
 
   .home .title {
-    top: 1%;
+    top: 1vh;
     left: 2%;
     font-size: 2rem;
     margin: 0;
   }
 }
-
-@media screen and (max-width: 1400px) {
-  .home .title {
-    color:white;
-  }
-}
-

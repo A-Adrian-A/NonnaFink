@@ -16,13 +16,13 @@ class SmallHome extends Component {
           Your browser does not support the video tag.
         </video>
         <div className='bubble-container' hidden>
-          <a id="news" class="bubble" href="/aktuelles/index.html">
+          <a id="news" className="bubble" href="/aktuelles/index.html">
             <div>News</div>
           </a>
-          <a id="about" class="bubble" href="/biografie/index.html">
+          <a id="about" className="bubble" href="/biografie/index.html">
             <div>About me</div>
           </a>
-          <a id="contact" class="bubble" href="mailto:me@nonnafink.com">
+          <a id="contact" className="bubble" href="mailto:me@nonnafink.com">
             <div>Contact</div>
           </a>
           <div className='bottom-border'>
