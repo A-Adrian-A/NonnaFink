@@ -2,7 +2,7 @@
   "name": "nonnafink",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nonnafink.com/scroll",
+  "homepage": "https://nonnafink.com",
   "dependencies": {
     "@jonkoops/matomo-tracker-react": "^0.7.0",
     "@testing-library/jest-dom": "^5.16.2",
