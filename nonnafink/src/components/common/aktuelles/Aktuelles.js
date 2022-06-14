@@ -21,7 +21,7 @@ class Aktuelles extends Component {
             <h1 id='aktuelles-title'>Aktuelles</h1>
             <div className='container-cards'>
             <Card title='Dinner Event'
-              text='Haben Sie Lust einen Krimi zu lösen. Dazu dinnieren Sie an eimem schönen Ort. Verschiedene Events von Mafia
+              text='Haben Sie Lust einen Krimi zu lösen. Dazu dinnieren Sie an einem schönen Ort. Verschiedene Events von Mafia
             Dinner bis zu Grusel Dinner werden mitreisend in Szene gesetzt.'
             >
               <Button text='Event Daten' link='https://rexer.ch/eventdaten/'></Button>
