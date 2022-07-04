@@ -1,0 +1,41 @@
+#contact {
+  background-color: #1d212a;
+  padding: 2rem;
+}
+
+#contact .title {
+  color: #59ff40;
+  text-align: center;
+  margin: 0;
+}
+
+#contact .button {
+  font-family: "Josefin Sans", Times, serif;
+  color: white;
+  background-color: #d42150;
+  font-size: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+#contact .text {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#contact .a {
+  font-family: "Josefin Sans", Times, serif;
+  color: white;
+  background-color: #d42150;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#contact .instagram {
+  height: 48px;
+  width: 48px;
+}
+
+

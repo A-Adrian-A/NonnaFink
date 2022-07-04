@@ -7,9 +7,7 @@
   margin: 1rem;
 }
 
-#galerie h1 {
-  margin-top: 3rem;
-}
+
 
 #galerie video {
   display: block;
@@ -36,6 +34,7 @@
 
 #galerie-title {
   color: #3bebb9;
+  padding: 0;
 }
 
 #galerie img:hover {

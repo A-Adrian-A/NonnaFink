@@ -2,14 +2,13 @@
   width: 100%;
   height: auto;
   margin: 0;
-
+  object-fit: contain;
   box-sizing: border-box;
 }
 
 .home {
   position: relative;
-
-
+ height: 100vh;
   min-height: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -27,7 +26,6 @@ html {
   margin: 0;
 }
 
-
 .home .title {
   position: absolute;
   top: 1%;
@@ -36,17 +34,13 @@ html {
   text-align: left;
   color: white;
   font-family: "Stint Ultra Expanded";
-
 }
-
 
 .navigation-container {
   position: absolute;
   top: 85vh;
   left: 2%;
 }
-
-
 
 @media screen and (max-width: 600px) {
   .navigation-container {
@@ -60,4 +54,13 @@ html {
     font-size: 2rem;
     margin: 0;
   }
+
+  .home img {
+  width: auto;
+  height: 100vh;
+  margin: 0;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
 }
