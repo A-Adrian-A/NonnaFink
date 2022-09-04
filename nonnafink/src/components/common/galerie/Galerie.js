@@ -171,6 +171,27 @@ const images = [
     url_big: require('../../../img/NONNAREGINAFINK-15-BW-F.jpg'),
     photographer: "Einbrandfotos",
   },
+  {
+    id: 29,
+    url: require('../../../img/theater/signal-2022-08-18-16-42-25-255-7.jpg'),
+    url_big: require('../../../img/theater/signal-2022-08-18-16-42-25-255-7.jpg'),
+    photographer: "Christian Schroff",
+  },
+  {
+    id: 30,
+    url: require('../../../img/theater/signal-2022-08-18-16-43-09-035-3.jpg'),
+    url_big: require('../../../img/theater/signal-2022-08-18-16-42-25-255-7.jpg'),
+    photographer: "Christian Schroff",
+  },
+  {
+    id: 31,
+    url: require('../../../img/theater/signal-2022-08-18-16-43-09-035-2.jpg'),
+    url_big: require('../../../img/theater/signal-2022-08-18-16-42-25-255-7.jpg'),
+    photographer: "Christian Schroff",
+  },
+  
+
+
 ];
 
 const movies = [
@@ -227,20 +248,21 @@ class Galerie extends Component {
               <source src={movies[0].url} type="video/mp4"></source>
               Your browser does not support the video tag.
             </video>
+            <Image image={images[30]} ></Image>
             <Image image={images[20]} ></Image>
             <Image image={images[9]} ></Image>
             <Image image={images[27]} ></Image>
-
+            <Image image={images[29]} ></Image>
             <Image image={images[22]} ></Image>
             <Image image={images[19]} ></Image>
           </div>
           <div className="column">
             <Image image={images[18]} ></Image>
             <Image image={images[7]} ></Image>
-            <Image image={images[23]} ></Image>
             <Image image={images[15]} ></Image>
             <Image image={images[5]} ></Image>
             <Image image={images[10]} ></Image>
+            <Image image={images[28]} ></Image>
           </div>
         </div>
       </div>

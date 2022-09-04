@@ -21,6 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: space-around;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -38,8 +39,8 @@
 }
 
 .fourtysixty{
-   display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 40% 1fr;
   width: 100%;
 }
 
